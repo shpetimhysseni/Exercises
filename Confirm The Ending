@@ -1,0 +1,13 @@
+function confirmEnding(str, target) {
+  let result = false;
+  let j = target.length;
+  let n = str.length;
+  if(n<j){
+    return result;
+  }if(str.substring(n-j,n)==target){
+    result = true;
+  }
+  return result;
+}
+
+confirmEnding("Bastian", "n");
